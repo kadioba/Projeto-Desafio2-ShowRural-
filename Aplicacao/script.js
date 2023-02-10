@@ -6,7 +6,7 @@ const image = imageInput.files[0];
 const formData = new FormData();
 formData.append("image", image);
 
-fetch("http://localhost:3000/server", {
+fetch("http://localhost:3000/images", {
 method: "POST",
 body: formData
 })
